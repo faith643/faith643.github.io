@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)https://songqt3.github.io/CrownDesign/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="description" content="Advanced Dental Digitization: Incorporating Shape Priors and
+    Multiview Coherence in Diffusion Models for Tooth Model Design">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Advanced Dental Digitization: Incorporating Shape Priors and
+    Multiview Coherence in Diffusion Models for Tooth Model Design</title>
+
+  <link href="./Advanced Dental Digitization_ Incorporating Shape Priors and Multiview Coherence in Diffusion Models for Tooth Model Design_files/css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./Advanced Dental Digitization_ Incorporating Shape Priors and Multiview Coherence in Diffusion Models for Tooth Model Design_files/bulma.min.css">
+  <link rel="stylesheet" href="./Advanced Dental Digitization_ Incorporating Shape Priors and Multiview Coherence in Diffusion Models for Tooth Model Design_files/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./Advanced Dental Digitization_ Incorporating Shape Priors and Multiview Coherence in Diffusion Models for Tooth Model Design_files/bulma-slider.min.css">
+  <link rel="stylesheet" href="./Advanced Dental Digitization_ Incorporating Shape Priors and Multiview Coherence in Diffusion Models for Tooth Model Design_files/fontawesome.all.min.css">
+  <link rel="stylesheet" href="./Advanced Dental Digitization_ Incorporating Shape Priors and Multiview Coherence in Diffusion Models for Tooth Model Design_files/index.css">
+
+</head>
+
+<body>
+
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">1232</h1>
+            <div class="is-size-5 publication-authors">
+              <div class="author-block" style="display: inline-block; width: 20%; vertical-align: top; margin: 1.66%;">
+                <span class="author-name-block">Yan Tian</span><br>
+                <span class="author-school-block">Zhejiang Gongshang University</span>
+              </div>
+    
+              <div class="author-block" style="display: inline-block; width: 20%; vertical-align: top; margin: 1.66%;">
+                <span class="author-name-block">Qiutao Song</span><br>
+                <span class="author-school-block">Zhejiang Gongshang University</span>
+              </div>
+    
+              <div class="author-block" style="display: inline-block; width: 20%; vertical-align: top; margin: 1.66%;">
+                <span class="author-name-block">Weiping Ding</span><br>
+                <span class="author-school-block">Nantong University</span>
+              </div>
+    
+              <div class="author-block" style="display: inline-block; width: 20%; vertical-align: top; margin: 1.66%;">
+                <span class="author-name-block">Mahmoud Hassaballah</span><br>
+                <span class="author-school-block">Prince Sattam Bin Abdulaziz University</span>
+              </div>
+    
+              <div class="author-block" style="display: inline-block; width: 20%; vertical-align: top; margin: 1.66%;">
+                <span class="author-name-block">Karen Egiazarian</span><br>
+                <span class="author-school-block">Tampere University</span>
+              </div>
+    
+              <div class="author-block" style="display: inline-block; width: 20%; vertical-align: top; margin: 1.66%;">
+                <span class="author-name-block">Teddy Yang</span><br>
+                <span class="author-school-block">University of Hong Kong</span>
+              </div>
+    
+              <div class="author-block" style="display: inline-block; width: 20%; vertical-align: top; margin: 1.66%;">
+                <span class="author-name-block">Xuran Zhao</span><br>
+                <span class="author-school-block">Zhejiang Gongshang University</span>
+              </div>
+    
+              <div class="author-block" style="display: inline-block; width: 20%; vertical-align: top; margin: 1.66%;">
+                <span class="author-name-block">Leszek Rutkowski</span><br>
+                <span class="author-school-block">Poland and AGH University of Krakow</span>
+              </div>
+             
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <!-- <span class="author-block">University of Washington,</span> -->
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="https://songqt3.github.io/CrownDesign/" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <!-- <span class="link-block">
+                  <a href="https://arxiv.org/abs/2011.12948" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span> -->
+                <span class="link-block">
+                  <a href="https://songqt3.github.io/CrownDesign/" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                    </a>
+                </span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              The generation of a missing tooth plays an important role in dental digitization, where visualization results increase patients' confidence in treatment.
+However, diffusion models in multiview editing depend on score distillation sampling (SDS) to enforce 3D awareness, which cannot model the joint image distribution of multiple views, leading to a drawback in 3D consistency.
+In addition, the collision avoidance term in neural radiance field (NeRF) fine-tuning often yields odd results due to the lack of shape prior to human teeth.
+Motivated by energy-based distribution modeling and diffusion model-based shape denoising, we design an approach following the infrastructure of iterative dataset update (IDU), where a multiview score distillation function (MSDS) is formulated during the multiview editing stage by incorporating an interview coherence compatible function based on image-to-image translation and reconstruction loss.
+Moreover, the defective tooth is renovated by adding shape priors distilled by a diffusion model and encouraging the consistency between this tooth prior and the generated tooth to avoid collision conflict in the NeRF fine-tuning stage.
+The experimental results on two tooth generation datasets indicate that our approach improves the multiview consistency and realism of the generated teeth by a margin compared to the prevailing approaches.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Method. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Method</h2>
+          <div class="content has-text-justified">
+            <img src="./Advanced Dental Digitization_ Incorporating Shape Priors and Multiview Coherence in Diffusion Models for Tooth Model Design_files/framework.png" alt="Description of the image">
+          </div>
+        </div>
+      </div>
+      <!--/ Method. -->
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Example. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Example</h2>
+          <div class="content has-text-justified">
+            <img src="./Advanced Dental Digitization_ Incorporating Shape Priors and Multiview Coherence in Diffusion Models for Tooth Model Design_files/example.png" alt="Description of the image">
+          </div>
+        </div>
+      </div>
+      <!--/ Example. -->
+    </div>
+  </section>
+
+
+
+
+
+.author-block {
+    display: block; /* 确保整体为块级元素 */
+    text-align: left; /* 或 center, right */
+    margin: 20px 0;
+}
+
+.author-block strong {
+    font-weight: bold;
+    color: #333;
+}
+</body></html>
