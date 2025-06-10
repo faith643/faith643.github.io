@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SAM2-Based RGB-D Zero-Shot Segmentation via Heterogeneous Fusion</title>
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+</head>
+<body>
+
+
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">SAM2-Based RGB-D Zero-Shot Segmentation via Heterogeneous Fusion</h1>
+          <div class="is-size-5 publication-authors">
+	   <div class="author-block" style="display: inline-block; width: 20%; vertical-align: top; margin: 1.66%;">
+                <span class="author-name-block">Yue Zhuo</span>
+              </div>
+            <div class="author-block" style="display: inline-block; width: 20%; vertical-align: top; margin: 1.66%;">
+                <span class="author-name-block">Di Zhou</span>
+              </div>
+	<div class="author-block" style="display: inline-block; width: 20%; vertical-align: top; margin: 1.66%;">
+                <span class="author-name-block">Pengpeng Xu</span>
+              </div>
+	<div class="author-block" style="display: inline-block; width: 20%; vertical-align: top; margin: 1.66%;">
+                <span class="author-name-block">Shilun Liu</span>
+              </div>
+	<div class="author-block" style="display: inline-block; width: 20%; vertical-align: top; margin: 1.66%;">
+                <span class="author-name-block">Chaojie He</span>
+              </div>
+	<div class="author-block" style="display: inline-block; width: 25%; vertical-align: top;  margin: 1.66%;">
+                <span class="author-name-block">Mahmoud Hassaballah</span>
+              </div>
+	<div class="author-block" style="display: inline-block; width: 20%; vertical-align: top; margin: 1.66%;">
+                <span class="author-name-block">Leszek Rutkowski</span>
+              </div>
+	<div class="author-block" style="display: inline-block; width: 20%; vertical-align: top; margin: 1.66%;">
+                <span class="author-name-block">Yan Tian</span>
+              </div>
+          </div>
+
+</section>
+
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+         Zero-shot segmentation based on RGB-D data plays a crucial role in embodied intelligence systems and autonomous driving technologies. However, current approaches face challenges with heterogeneous data fusion in multimodal foundation model (MDM)-based methods because the original segment anything model (SAM) is designed only for images or videos. In addition, the research on the fusion of multimedia data with different sizes is omitted. Motivated by the memory mechanism of SAM2, we design an approach for heterogeneous data fusion in zero-shot segmentation, where multimodal data are considered as a modality sequence to capture the modality-agnostic feature in the revised memory mechanism. In addition, the large-size modality is divided and assembled in channels, avoiding both loss of detail and noise introduced in upsampling. The experimental results in the ScanNet V2 and ScanNet200 datasets indicate that our approach improves the mean intersection over union (mIoU) by a margin of 1.33% and 1.42% when compared to the prevailing approaches.
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+</section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Example. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Example</h2>
+          <div class="content has-text-justified">
+	    <img src=".\static\images\2.png" alt="Description of the image">
+          </div>
+        </div>
+        </div>
+      </div>
+      <!--/ Example. -->
+    </div>
+  </section>
+
+
+
+
+
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This means you are free to borrow the <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
+            we just ask that you link back to this page in the footer.
+            Please remember to remove the analytics code included in the header of the website which
+            you do not want on your website.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<style>
+.author-block strong {
+    display: block; /* 确保整体为块级元素 */
+    text-align: center; /* 或 center, right */
+    margin: 2px;
+}
+
+.author-name-block strong {
+    font-size: 20px;
+}
+
+.author-block strong {
+    font-weight: bold;
+    color: #333;
+}
+</style>
+</body>
+</html>
+
+
